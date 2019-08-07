@@ -1,0 +1,64 @@
+car = 2000
+
+my_brand = input('Brand : ')                       # Create input message
+price_plus = car + 10
+print(price_plus)
+
+my_model = input('Model : ')                       # Create input message
+price_plus1 = price_plus + 10
+print(price_plus1)
+
+my_color = input('Color : ')                    # Create input message
+price_plus2 = price_plus1 + 10
+print(price_plus2)
+
+my_year = input('Year : ')                           # Create input message
+price_plus3 = price_plus2 + 10
+print(price_plus3)
+
+my_engine = input('Engine volume : ')                      # Create input message
+price_plus4 = price_plus3 + 10
+print(price_plus4)
+
+my_odometr = input('Odometer : ')                    # Create input message
+price_plus5 = price_plus4 + 10
+print(price_plus5)
+
+my_phone = input('Phone number : ')                           # Create input message
+price_plus6 = price_plus5 + 10
+print(price_plus6)
+
+list_brand_favourite = ['kia motors', 'hyundai', 'honda', 'toyota', 'lexus', 'infiniti', 'ferrari', 'jaguar',]   # Create list brand
+
+if my_brand not in list_brand_favourite :
+    print(my_brand, '- It is nor my favourite brand')
+
+my_year = int(my_year)          # Converting string to integer
+print(my_year)
+#raise Exception('')
+
+try :
+    my_engine = float(my_engine) + 0.1     # Converting string to integer
+except:
+    print(my_engine)
+else :
+    my_engine = float(my_engine) + 0.2     # Converting string to integer
+
+my_odometr = int(my_odometr)       # Converting string to integer
+
+if my_odometr <= 1000 : print('small')
+if my_odometr >= 50000 : print('big')
+if my_odometr == 100000 : print('good buy')
+
+if my_color == ('red') :
+    print('it is my favourite color')
+
+my_card_number = input('Card number : ')
+my_cvv = input('cvv :')
+my_month = input('mm/yy')
+
+if len(my_card_number) != 16 :
+    print('exit')
+
+if len(my_cvv) != 3 :
+    print('exit')

@@ -1,0 +1,36 @@
+import string
+
+inpyt_first_name = input('First Name : ')       # Create input message First Name
+print(inpyt_first_name)                         # Create output message First Name
+
+inpyt_last_name = input('Last Name : ')         # Create input message Last Name
+print(inpyt_last_name)                             # Create output message Last Name
+
+inpyt_email = input('Email : ')                 # Create input message Email
+print(inpyt_email)                              # Create output message Email
+
+input_age = input('Age : ')                     # Create input message Age
+print(input_age)                                # Create output message Age
+
+input_phone_number = input('Phone number : ')   # Create input message Phone number
+print(input_phone_number)                       # Create output message Phone number
+
+
+if input_phone_number[:3] == '097' :
+    print('Your phone number belongs to Kyivstar')
+   # raise Exception('.......')
+
+
+input_age = int(input_age)          # Converting string to integer
+print(input_age)
+
+
+if input_age >= 18 :
+    print('adult')
+else : print('minor')
+
+print(type(input_age))
+
+if not string.ascii_letters in inpyt_first_name:
+    print("No name")
+
